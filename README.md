@@ -8,12 +8,12 @@ Curated list of research on monitoring chain-of-thought (CoT) reasoning for safe
 
 ### [Reasoning Models Don't Always Say What They Think](https://arxiv.org/abs/2505.05410)
 
-- **Comments:** Finds that CoT traces expose hint usage in as few as 1% of cases and rarely above 20%, even though models rely on the hints; outcome-based RL boosts faithfulness briefly but plateaus, and increasing hint usage through RL does not make models verbalize those hints more often—highlighting that CoT monitoring alone cannot rule out hidden behaviors.
+- **Comments:** Finds that CoT traces expose hint usage in as few as 1% of cases and rarely above 20%, even though models rely on the hints; outcome-based RL boosts faithfulness briefly but plateaus, and increasing hint usage through RL does not make models verbalize those hints more often, highlighting that CoT monitoring alone cannot rule out hidden behaviors.
 
 ### [Measuring Faithfulness in Chain-of-Thought Reasoning](https://arxiv.org/abs/2307.13702)
 
-- **Comments:** Perturbs sampled CoTs by truncation, injected mistakes, paraphrasing, and filler tokens to test whether reasoning steps causally influence final answers, showing wide variation in faithfulness—some tasks change answers on <10% of truncations while AQuA exceeds 60%—and that larger models and easier arithmetic variants can become less faithful even when CoT boosts accuracy, motivating explicit monitoring of reasoning traces rather than assuming truthfulness.
+- **Comments:** Perturbs sampled CoTs by truncation, injected mistakes, paraphrasing, and filler tokens to test whether reasoning steps causally influence final answers, showing wide variation in faithfulness, noting that some tasks change answers on <10% of truncations while AQuA exceeds 60%, and that larger models and easier arithmetic variants can become less faithful even when CoT boosts accuracy, motivating explicit monitoring of reasoning traces rather than assuming truthfulness.
 
 ### [Monitoring Monitorability](https://openai.com/index/evaluating-chain-of-thought-monitorability/)
 
-- **Comments:** Defines a three-archetype CoT monitorability suite and shows CoT access consistently beats action-only monitoring, longer CoTs and higher monitor compute improve g-mean², RL at frontier scale typically preserves or boosts monitorability, follow-up questioning reveals more detectable clues, and targeted RL can train models to obfuscate CoTs—emphasizing the need to track monitorability across training procedures and agent/monitor scaling gaps.
+- **Comments:** Defines a three-archetype CoT monitorability suite and shows CoT access consistently beats action-only monitoring, longer CoTs and higher monitor compute improve g-mean², RL at frontier scale typically preserves or boosts monitorability, follow-up questioning reveals more detectable clues, and targeted RL can train models to obfuscate CoTs, emphasizing the need to track monitorability across training procedures and agent/monitor scaling gaps.
