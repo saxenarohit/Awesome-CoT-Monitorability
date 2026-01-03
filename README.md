@@ -8,14 +8,10 @@ Curated list of research on monitoring chain-of-thought (CoT) reasoning for safe
 
 ### [Reasoning Models Don't Always Say What They Think](https://arxiv.org/abs/2505.05410)
 
-- **Metrics:** Hint reveal rate between internal hint usage and expressed CoT traces; impact of outcome-based RL on CoT faithfulness.
-- **Datasets:** Hint-augmented reasoning prompts spanning six reasoning hints and multiple state-of-the-art reasoning models.
 - **Comments:** Finds that CoT traces expose hint usage in as few as 1% of cases and rarely above 20%, even though models rely on the hints; outcome-based RL boosts faithfulness briefly but plateaus, and increasing hint usage through RL does not make models verbalize those hints more often—highlighting that CoT monitoring alone cannot rule out hidden behaviors.
 
 ### [Measuring Faithfulness in Chain-of-Thought Reasoning](https://arxiv.org/abs/2307.13702)
 
-- **Metrics:** Early-answering and add-mistake area-over-curve (AOC) faithfulness scores; CoT vs. no-CoT accuracy deltas across tasks.
-- **Datasets:** ARC (Easy & Challenge), AQuA, HellaSwag, LogiQA, MMLU, OpenBookQA, TruthfulQA.
 - **Comments:** Perturbs sampled CoTs by truncation, injected mistakes, paraphrasing, and filler tokens to test whether reasoning steps causally influence final answers, showing wide variation in faithfulness—some tasks change answers on <10% of truncations while AQuA exceeds 60%—and that larger models and easier arithmetic variants can become less faithful even when CoT boosts accuracy, motivating explicit monitoring of reasoning traces rather than assuming truthfulness.
 
 ### [Monitoring Monitorability](https://openai.com/index/evaluating-chain-of-thought-monitorability/)
