@@ -10,6 +10,10 @@ Curated list of research on monitoring chain-of-thought (CoT) reasoning for safe
 
 - **Comments:** Finds that CoT traces expose hint usage in as few as 1% of cases and rarely above 20%, even though models rely on the hints; outcome-based RL boosts faithfulness briefly but plateaus, and increasing hint usage through RL does not make models verbalize those hints more often, highlighting that CoT monitoring alone cannot rule out hidden behaviors.
 
+### [Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety](https://arxiv.org/abs/2507.11473)
+
+- **Comments:** Argues that language-based reasoning offers a unique but delicate chance to detect misbehavior via CoT monitoring, surveys current evidence, highlights research gaps around evaluating necessity versus propensity to externalize reasoning, and warns that training choices such as process supervision, CoT penalties, or latent architectures could erode monitorability, urging frontier developers to consider these risks and invest in dedicated CoT monitoring research.
+
 ### [Measuring Chain-of-Thought Monitorability Through Faithfulness and Verbosity](https://arxiv.org/abs/2510.27378)
 
 - **Comments:** Defines monitorability as the product of CoT faithfulness and verbosity, measures both on BBH, GPQA, and MMLU for instruction-tuned and reasoning models, and finds that models can look faithful while omitting critical factors and that monitorability differs sharply across model families, with Inspect-based evaluation code released for reproducibility.
