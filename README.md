@@ -25,3 +25,7 @@ Curated list of research on monitoring chain-of-thought (CoT) reasoning for safe
 ### [Monitoring Monitorability](https://openai.com/index/evaluating-chain-of-thought-monitorability/)
 
 - **Comments:** Defines a three-archetype CoT monitorability suite and shows CoT access consistently beats action-only monitoring, longer CoTs and higher monitor compute improve g-mean², RL at frontier scale typically preserves or boosts monitorability, follow-up questioning reveals more detectable clues, and targeted RL can train models to obfuscate CoTs, emphasizing the need to track monitorability across training procedures and agent/monitor scaling gaps.
+
+### [Practical Challenges of Control Monitoring in Frontier AI Deployments](https://arxiv.org/abs/2512.22154)
+
+- **Comments:** Analyzes practical obstacles to scaling control monitoring beyond simplified testing environments, comparing synchronous, semi-synchronous, and asynchronous monitoring protocols with different tradeoffs between responsiveness and safety, identifies three primary challenges around oversight capabilities, response latency, and system recovery, and presents four case studies of plausible future AI deployment scenarios to bridge the gap between theoretical control monitoring frameworks and real-world deployment requirements.
